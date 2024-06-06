@@ -8,3 +8,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.btn{
+  padding: 10px;
+  margin: 5px;
+}

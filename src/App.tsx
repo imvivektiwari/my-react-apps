@@ -1,9 +1,12 @@
-import React from 'react';
+import { useEffect, useReducer, useState } from "react";
+import StopWatch from "./components/StopWatch/StopWatch";
 
 function App() {
+ 
+
   return (
     <div className="App">
-      Hello WOrld
+     <StopWatch />
     </div>
   );
 }
