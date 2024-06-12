@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { trelloBoardReducer } from "../features/trelloBoard.slice";
+import { trelloBoardReducer } from "../features/TrelloBoard/trelloBoard.slice";
 
 const store = configureStore({
     reducer: {

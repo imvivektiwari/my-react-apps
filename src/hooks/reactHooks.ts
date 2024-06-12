@@ -1,21 +1,21 @@
-const isChanged = (prevDeps, currentDeps) => {
+const isChanged = (prevDeps:any[], currentDeps:any[]) => {
     return JSON.stringify(prevDeps) !== JSON.stringify(currentDeps)
 };
 
-export const useCustomState = (initialValue) => {
+export const useCustomState = (initialValue:any) => {
     let value = initialValue;
-    function setValue(newValue) {
+    function setValue(newValue:any) {
         value = newValue;
     }
     return [value, setValue];
 };
 
-
 export const useCustomEffect = (() => {
-    let prevDependency = [];
+    let prevDependency:any[] = [];
     let firstRender = false;
-    let cleanup = null;
-    return (effect, dependency) => {
+    let cleanup:any = null;
+
+    return (effect:any, dependency?:any[]) => {
         if(!firstRender){
             firstRender=true;
             cleanup = effect();
@@ -28,7 +28,6 @@ export const useCustomEffect = (() => {
             cleanup = effect();
         }
         
-
         if(cleanup){
             cleanup();
         }

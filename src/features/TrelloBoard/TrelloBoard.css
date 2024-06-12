@@ -1,0 +1,20 @@
+#trello-board-container{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+#trello-board-container .category{
+    min-height: 100px;
+    min-width: 200px;
+    background-color: #ECEDEF;
+    border-radius: 3px;
+    position: relative;
+}
+
+#trello-board-container .add-item-button{
+    position: absolute;
+    bottom: 0px;
+}
+
